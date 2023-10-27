@@ -1,0 +1,1 @@
+numOfOnes = histogramPlot(spikeMat);

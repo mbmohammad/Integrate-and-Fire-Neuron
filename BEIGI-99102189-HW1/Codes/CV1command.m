@@ -1,0 +1,9 @@
+[ spikeMat , tVec ] = erlangSpikeGen ( 100 , 1/1000, 1 , 100000, 5 );
+spikeIntervals = ISIGammaHistogramPlot(spikeMat, 5);
+gamma5 = sqrt(var(spikeIntervals))/mean(spikeIntervals)
+[ spikeMat , tVec ] = erlangSpikeGen ( 100 , 1/1000, 1 , 100000, 9 );
+spikeIntervals = ISIGammaHistogramPlot(spikeMat, 9);
+gamma9 = sqrt(var(spikeIntervals))/mean(spikeIntervals)
+[ spikeMat , tVec ] = erlangSpikeGen ( 100 , 1/1000, 1 , 100000, 20 );
+spikeIntervals = ISIGammaHistogramPlot(spikeMat, 20);
+gamma20 = sqrt(var(spikeIntervals))/mean(spikeIntervals)
